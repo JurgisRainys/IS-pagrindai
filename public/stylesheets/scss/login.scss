@@ -2,109 +2,68 @@ $copyrightColor: #cccccc;
 $registrationFormShadowColor: #666699;
 $textColor: #9999cc;
 
-
-@media screen and (min-width: 1024px) {
-    .registration-content-container {
-        min-height: 100%;
-        display: grid;
-        grid-template-columns: 4fr 2fr 4fr;
-        text-align: center;
-        margin: 0;
-        background: white url('../img/grandient.jpg') no-repeat;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-
-    .registration-content-container > h1 {
-        margin: 0;
-        grid-column: 2;
-        padding: 90px 0 30px 0;
-        color: white;
-        font-weight: 200;
-        font-size: 2.25em;
-    }
-
-    .registration-form {
-        box-shadow: 0 5px 20px 2px $registrationFormShadowColor;
-        grid-column: 2;
-        background: white;
-        margin-bottom: 100px;
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-    }
-
-    .registration-form > ul {
-        list-style-type: none;
-        padding: 0;
-        padding-top: 60px;    
-        margin: 0;
-        grid-column: 2;
-        display: grid;
-        grid-template-rows: repeat(7, 70px);
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    .registration-form li {
-        color: $textColor;
-        grid-column: 1/ 4;
-    }
-
-    .registration-form input {
-        width: 100%;
-        display: block;    
-        border: 0;
-        border-bottom: 1px solid $textColor;
-        font-size: 1em;
-    }
-
-    .registration-form input:focus {
-        outline: none;
-    }
-
-    .registration-form input::-webkit-input-placeholder {
-        color: $textColor;
-    }
-    .registration-form input:-moz-placeholder {
-        color: $textColor;
-    }
-    .registration-form input::-moz-placeholder {
-        color: $textColor;
-    }
-    .registration-form input:-ms-input-placeholder {
-        color: $textColor;
-    }
-
-    #registration-submit-btn {
-        grid-column: 2;    
-    }
-
-    #registration-submit-btn input {
-        color: white;
-        background-color: $textColor;
-        padding: 5px;
-        border-radius: 3px;
-    }
-
-    #registration-submit-btn input:focus {
-        opacity: 0.7;
-    }
-
-    .registration-content-container > footer {
-        text-align: left;  
-        padding-left: 40px;
-        padding-top: 15px;
-        margin: 0 150px;
-        border-top: 1px solid $copyrightColor;
-        height: 100px;
-        grid-column: 1 / 4;
-        color: $copyrightColor;
-        font-size: 1.25em;
-    }
+.registration-content-container > h1 {
+    margin: 0;
+    grid-column: 2;
+    padding: 70px 0 30px 0;
+    color: white;
+    font-weight: 200;
+    font-size: 2.25em;
 }
 
+.registration-form {
+    box-shadow: 0 5px 20px 2px $registrationFormShadowColor;
+    grid-column: 2;
+    background: white;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+}
 
+.registration-form li {
+    color: $textColor;
+    grid-column: 1 / 4;
+}
+
+.registration-form input {
+    width: 100%;
+    display: block;    
+    border: 0;
+    border-bottom: 1px solid $textColor;
+    font-size: 1em;
+}
+
+.registration-form input:focus {
+    outline: none;
+}
+
+.registration-form input::-webkit-input-placeholder {
+    color: $textColor;
+}
+.registration-form input:-moz-placeholder {
+    color: $textColor;
+}
+.registration-form input::-moz-placeholder {
+    color: $textColor;
+}
+.registration-form input:-ms-input-placeholder {
+    color: $textColor;
+}
+
+#registration-submit-btn {
+    grid-column: 2;    
+}
+
+#registration-submit-btn input {
+    color: white;
+    background-color: $textColor;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#registration-submit-btn input:focus {
+    opacity: 0.7;
+}
 
 @media screen and (max-width: 480px) {
     .registration-content-container {
@@ -120,24 +79,6 @@ $textColor: #9999cc;
         background-size: cover;
     }
 
-    .registration-content-container > h1 {
-        margin: 0;
-        grid-column: 2;
-        padding: 90px 0 30px 0;
-        color: white;
-        font-weight: 200;
-        font-size: 2.25em;
-    }
-
-    .registration-form {
-        box-shadow: 0 5px 20px 2px $registrationFormShadowColor;
-        grid-column: 2;
-        background: white;
-        margin-bottom: 100px;
-        display: grid;
-        grid-template-columns: 1fr 4fr 1fr;
-    }
-
     .registration-form > ul {
         list-style-type: none;
         padding: 0;
@@ -147,51 +88,6 @@ $textColor: #9999cc;
         display: grid;
         grid-template-rows: repeat(7, 70px);
         grid-template-columns: 1fr 4fr 1fr;
-    }
-
-    .registration-form li {
-        color: $textColor;
-        grid-column: 1/ 4;
-    }
-
-    .registration-form input {
-        width: 100%;
-        display: block;    
-        border: 0;
-        border-bottom: 1px solid $textColor;
-        font-size: 1em;
-    }
-
-    .registration-form input:focus {
-        outline: none;
-    }
-
-    .registration-form input::-webkit-input-placeholder {
-        color: $textColor;
-    }
-    .registration-form input:-moz-placeholder {
-        color: $textColor;
-    }
-    .registration-form input::-moz-placeholder {
-        color: $textColor;
-    }
-    .registration-form input:-ms-input-placeholder {
-        color: $textColor;
-    }
-
-    #registration-submit-btn {
-        grid-column: 1/4;    
-    }
-
-    #registration-submit-btn input {
-        color: white;
-        background-color: $textColor;
-        padding: 5px;
-        border-radius: 3px;
-    }
-
-    #registration-submit-btn input:focus {
-        opacity: 0.7;
     }
 
     .registration-content-container > footer {
@@ -220,24 +116,42 @@ $textColor: #9999cc;
         background-size: cover;
     }
 
-    .registration-content-container > h1 {
+    .registration-form > ul {
+        list-style-type: none;
+        padding: 0;
+        padding-top: 60px;    
         margin: 0;
         grid-column: 2;
-        padding: 90px 0 30px 0;
-        color: white;
-        font-weight: 200;
-        font-size: 2.25em;
+        display: grid;
+        grid-template-rows: repeat(7, 70px);
+        grid-template-columns: 2fr 4fr 2fr;
     }
 
-    .registration-form {
-        box-shadow: 0 5px 20px 2px $registrationFormShadowColor;
-        grid-column: 2;
-        background: white;
-        margin-bottom: 100px;
+    .registration-content-container > footer {
+        text-align: left;    
+        padding-top: 15px;
+        border-top: 1px solid $copyrightColor;
+        height: 100px;
         display: grid;
-        
-        grid-template-columns: 1fr 4fr 1fr;
-        
+        grid-column: 1/4;
+        margin: 0% 10% 0% 10%;
+        color: $copyrightColor;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .registration-content-container {
+        min-height: 100%;
+        display: grid;
+        grid-template-columns: 4fr 2fr 4fr;
+        text-align: center;
+        margin: 0;
+        background: white url('../img/grandient.jpg') no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 
     .registration-form > ul {
@@ -248,69 +162,18 @@ $textColor: #9999cc;
         grid-column: 2;
         display: grid;
         grid-template-rows: repeat(7, 70px);
-        /*
-        grid-template-columns: 2fr 4fr 2fr;
-        */
-    }
-
-    .registration-form li {
-        color: $textColor;
-        grid-column: 1/4;
-    }
-
-    .registration-form input {
-        width: 100%;
-        display: block;    
-        border: 0;
-        border-bottom: 1px solid $textColor;
-        font-size: 1em;
-    }
-
-    .registration-form input:focus {
-        outline: none;
-    }
-
-    .registration-form input::-webkit-input-placeholder {
-        color: $textColor;
-    }
-    .registration-form input:-moz-placeholder {
-        color: $textColor;
-    }
-    .registration-form input::-moz-placeholder {
-        color: $textColor;
-    }
-    .registration-form input:-ms-input-placeholder {
-        color: $textColor;
-    }
-
-    #registration-submit-btn {
-        grid-column: 1/4;    
-    }
-
-    #registration-submit-btn input {
-        color: white;
-        background-color: $textColor;
-        padding: 5px;
-        border-radius: 3px;
-    }
-
-    #registration-submit-btn input:focus {
-        opacity: 0.7;
+        grid-template-columns: 1fr 2fr 1fr;
     }
 
     .registration-content-container > footer {
-        text-align: left;    
+        text-align: left;  
+        padding-left: 40px;
         padding-top: 15px;
-        
+        margin: 0 150px;
         border-top: 1px solid $copyrightColor;
         height: 100px;
-        display: grid;
-        /*
-        grid-template-columns: 1fr 4fr 1fr;
-        */
-        grid-column: 1/4;
-        margin: 0% 10% 0% 10%;
+        grid-column: 1 / 4;
         color: $copyrightColor;
         font-size: 1.25em;
     }
-    }
+}
